@@ -1,0 +1,37 @@
+html, body {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#status {
+    border: 4px solid;
+    padding: 10px;
+    margin: 20px;
+    font-size: 24px;
+}
+#status.valid {
+    background: #28c8286b;
+    border-color: green;
+}
+#status.invalid {
+    background: #e7174085;
+    border-color: red;
+}
+
+#element {
+    position: absolute;
+    border: 4px solid;
+    border-radius: 16px;
+    background: #6ca0cdad;
+    width: 220px;
+    height: 120px;
+    left: 200px;
+    bottom: 200px;
+    animation: move 5s ease infinite;
+}
+
+@keyframes move { 
+    50% { bottom: -200px; };
+}
