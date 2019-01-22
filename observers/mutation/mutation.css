@@ -1,0 +1,44 @@
+html, body {
+    overflow: hidden;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#status {
+    border: 4px solid;
+    padding: 10px;
+    margin: 20px;
+    font-size: 24px;
+    background: #ffff0069;
+    min-height: 40px;
+}
+
+#board {
+    border: 4px solid;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 16px;
+    background: #33332c66;
+    min-height: 80px;
+}
+#board .item {
+    padding: 2px;
+    border: 2px solid;
+    width: 40px;
+    height: 40px;
+    background: green;
+    display: inline-block;
+    margin: 10px;
+}
+
+#controls {
+    margin: 20px;
+}
+#controls .control {
+    padding: 10px 20px;
+    border-radius: 6px;
+    margin: 0 5px;
+    cursor: pointer;
+    width: 120px;
+}
