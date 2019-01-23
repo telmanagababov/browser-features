@@ -2,6 +2,7 @@ const status = document.querySelector('#status');
 const speechControl = document.querySelector('#control-speech');
 
 speech('Auto-Playing text');
+// navigator.vibrate('123');
 speechControl.onclick = () => speech('Hello World');
 
 observeReporting(onReported);

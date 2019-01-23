@@ -4,7 +4,7 @@ const element = document.querySelector('#element');
 observeIntersection(element, onElementIntersectionChanged);
 
 function observeIntersection(element, callback) {
-    const io = new IntersectionObserver(callback, {});
+    const io = new IntersectionObserver(callback, { threshold: [0, 1]});
     io.observe(element);
     return io;
 }
